@@ -33,18 +33,18 @@ class Program
                     if (Player == 1) { Player = 2; }
                     else { Player = 1; }
                 }
-            }
 
-            else
-            {
-                Console.WriteLine("Illegal move! Try Again.");
-            }
+                else
+                {
+                    Console.WriteLine("Illegal move! Try Again.");
+                }
 
-            if (location == 9)
-            {
-                Game(board);
-                Console.WriteLine("Game Over!");
-                gameRunning = false;
+                if (location == 9)
+                {
+                    Game(board);
+                    Console.WriteLine("Game Over!");
+                    gameRunning = false;
+                }    
             }
             else { Console.WriteLine("Illegal Move! Try Again."); }
         }
